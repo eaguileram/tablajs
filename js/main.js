@@ -4,6 +4,7 @@ function Grabar(){
     let persona = new Object();
 
     let dato = document.getElementById('nombre').value;
+    let close = " [x]";
     persona['nombre'] = dato;
 
     nombre.push(persona);
@@ -12,7 +13,7 @@ function Grabar(){
     var nuevoNombre = tabla.insertRow(0);
     var nuevaColumna = nuevoNombre.insertCell(0);
 
-    var newNombre = document.createTextNode(dato);
+    var newNombre = document.createTextNode(dato+close);
     nuevaColumna.appendChild(newNombre);
 
     console.log(nombre);
